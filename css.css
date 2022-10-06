@@ -1,0 +1,515 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-family: "Roboto Light", "Roboto Thin", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.title {
+    color: black;
+    font-size: 32px;
+    line-height:37px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    background-color: #34547A;
+    text-decoration: none;
+    padding: 25px 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+}
+
+.text {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.page-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1150px;
+    padding: 100px 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*---------------------Header---------------------*/
+.header {
+    display: flex;
+    position: absolute;
+    width: 1200px;
+}
+
+.menu_nav {
+    display: flex;
+}
+
+.nav {
+    margin-right: 40px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+}
+
+.nav:hover {
+    color: #34547A;
+}
+
+/*---------------------Banner---------------------*/
+.container_banner {
+    background-color: #EEEFF1;
+}
+
+.banner {
+    display: flex;
+    margin-top: 100px;
+
+}.banner-block {
+     width: 50%;
+ }
+
+.banner-img {
+    padding-top:100px;
+}
+
+.banner-title,
+.banner-text {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.banner-text {
+    line-height: 1.6;
+}
+
+.banner-title {
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+}
+
+/*---------------------About---------------------*/
+
+.container_about {
+    background-color: #E5E5E538;
+    width: 100%;
+}
+
+.about-block {
+    margin: 0 250px;
+}
+
+
+/*---------------------Icon---------------------*/
+.container_icon {
+    background-color: #34547A;;
+    width: 100%;
+}
+
+.icon-project,
+.icon-block{
+    display: flex;
+    color: white;
+}
+
+.icon-block {
+    margin-right: 50px;
+}
+
+.icon-block-pic {
+    margin-right: 20px;
+}
+/*---------------------Skills---------------------*/
+.container_skill {
+    background-color: #E5E5E538;
+}
+
+.skill-block {
+    display: flex;
+}
+
+.skill {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.my-photo {
+    width: 550px;
+    margin: 30px;
+}
+
+.skill-list {
+    max-width: 445px;
+}
+
+.skill-item,
+.skill-item {
+    padding-top: 30px;
+}
+
+.skill-title {
+    text-align: left;
+}
+.skill-load {
+    position: relative;
+    height: 4px;
+    background: #C4C4C4;
+}
+
+.skill-progress {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #34547A;
+}
+
+.skill-text {
+    text-align: left;
+}
+/*---------------------Video---------------------*/
+.container_video {
+    background-color: #EEEFF1;
+}
+
+.video-text {
+    margin: 0 250px 60px 250px;
+}
+
+.video-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play_button {
+    position: absolute;
+    text-decoration: none;
+}
+
+/*---------------------Gallery---------------------*/
+.wrapper_gallery {
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1150px;
+    line-height: 0;
+
+}
+
+.container_gallery,
+.container_microsoft {
+    background-color: #E5E5E538;
+}
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25%;
+    position: relative;
+}
+
+.view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(15, 33, 44, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition:  opacity .3s ease;
+}
+
+.view-pic {
+    margin: 0;
+}
+
+.gallery-img:hover {
+    opacity: 1;
+}
+
+.view:hover {
+    opacity: 1;
+}
+
+
+/*-----------------Microsoft--------------------*/
+
+.microsoft-img {
+    width: 20%;
+}
+
+.wrapper-microsoft {
+    max-width: 1150px;
+    padding: 70px 15px 100px 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.microsoft-img {
+    margin: 0 10px;
+}
+
+/*--------------------Form---------------------*/
+.container_form {
+    background-color: #EEEFF1;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper_form {
+    max-width: 1150px;
+    padding: 100px 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-block {
+    text-align: center;
+    max-width: 50%;
+
+}
+
+.block-name {
+    display: flex;
+}
+
+input {
+    width: 50%;
+    height: 50px;
+}
+
+
+.email {
+    margin-left: 40px;
+}
+
+textarea {
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100px;
+}
+
+/*--------------------Footer---------------------*/
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper {
+    max-width: 1150px;
+    padding: 50px 15px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #34547A;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .wrapper {
+        padding: 70px 15px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .about-block {
+        margin: 0 100px;
+    }
+    .banner-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .banner-title,
+    .banner-text {
+        margin-bottom: 35px;
+    }
+    .banner-img {
+        padding-top:70px;
+    }
+
+    .icon-block:nth-child(6)
+    {
+        display: none;
+    }
+    .icon-block:nth-child(4) {
+        margin-right: 0;
+    }
+    .icon-block {
+        margin-right: 50px;
+    }
+
+    .icon-block-pic {
+        margin-right: 20px;
+    }
+    .video-text {
+        margin: 0 200px 40px 200px;
+    }
+    .wrapper-microsoft {
+        padding: 70px 15px 50px 15px;
+    }
+    .wrapper_form {
+        padding: 50px 15px;
+    }
+    .footer-wrapper {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        padding: 18px 30px;
+    }
+    .banner {
+        display: block;
+    }
+    .banner-block {
+        width: 100%;
+    }
+    .banner-title,
+    .banner-text {
+        text-align: center;
+    }
+    .icon-block:nth-child(4)
+    {
+        display: none;
+    }
+    .skill {
+        padding-top: 0;
+    }
+
+    .my-photo {
+        width: 450px;
+    }
+    .skill-item,
+    .skill-item {
+        padding-top: 10px;
+    }
+    .video-text {
+        margin: 0 100px 60px 100px;
+    }
+    .play_button {
+        width: 10%;
+    }
+    .wrapper-microsoft {
+        padding: 40px 15px 50px 15px;
+    }
+    .microsoft-img:nth-child(4) {
+        display: none;
+    }
+    .wrapper_form {
+        padding: 50px 15px;
+    }
+
+    .email {
+        margin-left: 30px;
+    }
+
+    .form-block {
+        max-width: 90%;
+    }
+    .footer-pic {
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 350px) {
+    .btn {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+    .wrapper {
+        padding: 40px 15px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .about-block {
+        margin: 0 40px;
+    }
+    .icon-block:nth-child(3),
+    .icon-block:nth-child(4)
+    {
+        display: none;
+    }
+    .skill-block {
+        display: block;
+        width: 100%;
+    }
+    .skill {
+        width: 100%;
+    }
+
+    .my-photo {
+        max-width: 100%;
+    }
+
+    .skill-list {
+        max-width: 445px;
+    }
+
+    .skill-item,
+    .skill-item {
+        padding-top: 0;
+    }
+    .my-photo {
+        max-width: 90%;
+    }
+    .skill-item,
+    .skill-item {
+        padding-top: 10px;
+    }
+    .video-text {
+        margin: 0 50px 60px 50px;
+    }
+    .wrapper_form {
+        padding: 30px 15px;
+    }
+}
